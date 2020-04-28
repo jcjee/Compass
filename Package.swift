@@ -24,10 +24,12 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "Compass",
-            dependencies: []),
+            dependencies: [],
+            path: "Sources"),
             
         .testTarget(
             name: "CompassTests",
-            dependencies: ["Compass"]),
+            dependencies: ["Compass"],
+            path: "Tests"),
     ]
 )
